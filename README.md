@@ -9,7 +9,9 @@ cd install_pkg
 cat Payload | cpio -idm
 ```
 
-If cpio failec, try
+If cpio failed, try
 ```bash
 gzip -dc Payload | cpio -idm
 ```
+
+It should works for most App, except some one required ```root``` daemon.
